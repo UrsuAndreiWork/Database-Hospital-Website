@@ -1,0 +1,24 @@
+<link href="../static/css/table.css" rel="stylesheet">
+
+<table>
+    <thead>
+        <tr>
+            <th>ID_Programare</th>
+            <th>ID_Pacient</th>
+            <th>Data</th>
+            <th>Ora</th>
+            <th>ID_Medic</th>
+        </tr>
+    </thead>
+    <tbody>
+	{% for programari in programari%}
+        <tr>
+            <td>{{ programari.id_prog }}</td>
+			<td>{{ programari.id_p }}</td>
+			<td>{{ programari.data_prog }}</td>
+            <td>{{ programari.ora_prog  }}</td>
+			<td>{{ programari.id_m }}</td>
+        </tr>
+		{% endfor %}
+    </tbody>
+</table>

@@ -1,0 +1,28 @@
+<link href="../static/css/table.css" rel="stylesheet">
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nume</th>
+            <th>Prenume</th>
+            <th>Varsta</th>
+            <th>E-Mail</th>
+            <th>Telefon</th>
+			<th>Conditie</th>
+        </tr>
+    </thead>
+    <tbody> 
+        {% for pacienti in pacienti %}
+        <tr>
+            <td>{{ pacienti.id_p }}</td>
+			<td>{{ pacienti.nume_p }}</td>
+			<td>{{ pacienti.prenume_p }}</td>
+			<td>{{ pacienti.varsta_p }}</td>
+			<td>{{ pacienti.mail_p }}</td>
+			<td>{{ pacienti.telefon_p }}</td>
+			<td>{{ pacienti.conditie_p }}</td>      
+        </tr> 
+            {% endfor %}
+    </tbody>
+</table>

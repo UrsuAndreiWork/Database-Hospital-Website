@@ -1,0 +1,32 @@
+<link href="../static/css/table.css" rel="stylesheet">
+
+</style>
+<table>
+    <thead>
+        <tr>
+            <th>ID_Medic</th>
+            <th>Nume</th>
+            <th>Prenume</th>
+            <th>Varsta</th>
+            <th>Spital</th>
+			<th>Specializare</th>
+			<th>Mail</th>
+			<th>Telefon</th>
+			
+        </tr>
+    </thead>
+    <tbody>
+	{% for medici in medici%}
+        <tr>
+            <td>{{ medici.id_m }}</td>
+            <td>{{ medici.nume_m }}</td>   
+            <td>{{ medici.prenume_m }}</td>
+            <td>{{ medici.varsta_m }}</td>
+            <td>{{ medici.spital_m }}</td>
+            <td>{{ medici.specializare_m }}</td>   
+            <td>{{ medici.mail_m }}</td>
+            <td>{{ medici.telefon_m }}</td> 			
+        </tr>
+		{% endfor %}
+    </tbody>
+</table>

@@ -1,0 +1,24 @@
+<link href="../static/css/table.css" rel="stylesheet">
+<table>
+    <thead>
+        <tr>
+            <th>ID_Medicament</th>
+            <th>Nume</th>
+            <th>Firma</th>
+            <th>Cantitate</th>
+			<th>Ingrediente</th>
+			
+        </tr>
+    </thead>
+    <tbody>
+	{% for medicamente in medicamente%}
+        <tr>
+            <td>{{ medicamente.id_med }}</td>
+            <td>{{ medicamente.nume_med }}</td>
+            <td>{{ medicamente.firma_med }}</td>
+            <td>{{ medicamente.cant_med }}</td>
+            <td>{{ medicamente.ingr_activ}}</td>			
+        </tr>
+		{% endfor %}
+    </tbody>
+</table>
